@@ -13,6 +13,7 @@
     </head>
     <body>
         <h1>Bem Vindo, <?php echo $_SESSION['usuario'];?>!<h1>
-        <p><a href="logout2.php">Click aqui para sair</a></p>    
+        <p><a href="logout2.php">Click aqui para sair</a></p><br>
+        <p><a href="buscar.php">Buscar Usuarios</a></p>
     </body>
 </html>
