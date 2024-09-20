@@ -8,7 +8,7 @@
             $query = "INSERT INTO usuarios(nome, email, senha) VALUE (:nome, :email, :senha)";
             $stmt = $pdo->prepare($query);
             $stmt->bindParam(':nome',$nome);
-            $stmt->bindParam(':email',$senha);
+            $stmt->bindParam(':email',$email);
             $stmt->bindParam(':senha',$senha);
             if($stmt->execute()){
                 echo"Usuário cadastrado com sucesso!";
@@ -39,7 +39,7 @@
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" requerid><br><br>
             <input type="Submit" name="cadastrar" value="Cadastrar">
-            <button type="reset" class="btn-limpar">Cadastrar</button>
+            <button type="reset" class="btn-limpar">Limpar</button>
             <button type="button" class="btn-voltar" onclick="window.lacation.href='index.html'">Voltar</button>
         </form>
     </body>
